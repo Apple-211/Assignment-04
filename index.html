@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<!--
+  Name: Yasmin
+  Date: 10/16/2026
+  CSC 372-01
+
+  This page creates a searchable TV show gallery using the
+  TVmaze API given. Visitors can search for shows and view
+  information about each show.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TVmaze Show Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>TV Show Gallery</h1>
+    <p>- search for your favorite TV shows here - </p>
+  </header>
+
+  <main>
+    <form id="search-form">
+      <label for="search-input">Search for a TV show:</label>
+      <input
+        type="search"
+        id="search-input"
+        name="search"
+        placeholder="Enter a show title"
+    
+      >
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="status-message"></p>
+
+    <h2>Search Results:</h2>
+
+    <section id="show-gallery">
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      TV show information provided by
+      <a href="https://www.tvmaze.com/" target="_blank" rel="noopener noreferrer">TVmaze</a>.
+    </p>
+  </footer>
+
+</body>
+</html>
